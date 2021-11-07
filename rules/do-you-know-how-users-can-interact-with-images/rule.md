@@ -15,6 +15,7 @@ redirects: []
 
 How users can interact with an image is dependant on the context of the image and the intended user workflow.  Follow these guide lines to help you decide which interaction to use, to give your users the best experience you can.
 
+<!--endintro-->
 
 ### 1. Modal Image
 Modal Image is the ability to zoom a image in the same page via Modal.  Returning to the normal workflow should be done with a quick click or scroll.  A Modal Image should be indicated by a Magnifying Glass Cursor  when hovering over this image. 
