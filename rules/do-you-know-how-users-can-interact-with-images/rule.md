@@ -17,10 +17,10 @@ How users can interact with an image is dependant on the context of the image an
 
 <!--endintro-->
 
-### 1. Modal Image
-Modal Image is the ability to zoom a image in the same page via Modal.  Returning to the normal workflow should be done with a quick click or scroll.  A Modal Image should be indicated by a Magnifying Glass Cursor  when hovering over this image. 
+### 1. Lightbox
+The Lightbox operates by zooming in on the image and dimming out the rest of the page.  Lightboxes work well with galleries of related images, or just a single image.  In the case of a single image, returning to the normal workflow should be done with a quick click or scroll.  A Lightbox should be indicated by a Magnifying Glass Cursor  when hovering over the image. 
 
-Modal Image should be used when:
+Lightboxes should be used when:
 
   * The image has a larger scale to view, or details that might need to be viewed
   * To maximize accessibility
