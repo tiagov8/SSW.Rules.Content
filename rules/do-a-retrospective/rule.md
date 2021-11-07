@@ -3,7 +3,7 @@ type: rule
 archivedreason: 
 title: Do you do a retrospective after an activity ends (a.k.a. take feedback)?
 guid: 65951a31-6593-468a-9b5b-f861aeef782a
-uri: do-you-know-you-should-do-a-retrospective-after-an-activity-ends-a-k-a-feedback
+uri: do-a-retrospective
 created: 2014-09-24T18:27:34.0000000Z
 authors:
 - title: Adam Cogan
@@ -14,8 +14,10 @@ authors:
   url: https://ssw.com.au/people/joanna-feely
 related: 
 - do-you-know-what-happens-at-a-sprint-retrospective-meeting
+- do-you-know-when-and-when-not-to-use-email
 redirects:
 - do-you-know-you-should-do-a-retrospective-after-an-activity-ends-(a-k-a-feedback)
+- do-you-know-you-should-do-a-retrospective-after-an-activity-ends-a-k-a-feedback
 
 ---
 
