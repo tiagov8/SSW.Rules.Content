@@ -28,7 +28,7 @@ Lightboxes should be used when:
   * Should be considered the default choice for clickable images
 
 ::: good  
-![Figure: An image modal zoomed in after clicking it.  Returning out of zoom should be a simple scroll or click.](zoomed-in.jpg)  
+![Figure: An image modal zoomed in after clicking it.  Returning out of zoom should be a simple scroll or click.](lightbox.jpg)  
 :::
 
 ### 2. New Tab
