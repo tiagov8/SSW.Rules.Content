@@ -63,3 +63,23 @@ If you are curious about a URL, and think it might be legitimate, you can check 
 ::: good
 ![Good example – the domain ANZ.com.au is owned by ANZ](good-whois.png)
 :::
+
+
+<!-- test url with unicode - DELETE later -->
+::: greybox
+http&#58;//linkedin&#46;com&#46;sggr&#46;ru/someaddress
+:::
+::: bad
+Bad example – the address has LinkedIn in it, but it is a sub-domain, not the domain
+:::
+
+<!-- test complicated text string - DELETE later-->
+::: greybox
+**$Jun!ZW@gYS%4hYj**
+:::
+::: good
+Good example - a computer generated password people won't remember
+:::
+
+<!-- test bold markup - DELETE later -->
+You might think a favorite sentence from a book might be better, given that it’s longer. While this is true in the context of time taken to brute force a password with procedural character combinations, as attackers adapt to their techniques to longer passwords, it’s important to remember that **a combination of words known to anyone in the world other than you is bad to use as a password**.
