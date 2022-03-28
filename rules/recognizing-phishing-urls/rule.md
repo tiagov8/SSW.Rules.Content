@@ -64,15 +64,6 @@ If you are curious about a URL, and think it might be legitimate, you can check 
 ![Good example – the domain ANZ.com.au is owned by ANZ](good-whois.png)
 :::
 
-
-<!-- test url with unicode - DELETE later -->
-::: greybox
-http&#58;//linkedin&#46;com&#46;sggr&#46;ru/someaddress
-:::
-::: bad
-Bad example – the address has LinkedIn in it, but it is a sub-domain, not the domain
-:::
-
 <!-- test complicated text string - DELETE later-->
 ::: greybox
 **$Jun!ZW@gYS%4hYj**
