@@ -29,3 +29,10 @@ You might think a favorite sentence from a book might be better, given that it�
 ::: bad
 Bad example – it is a word that other people know
 :::
+ 
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
