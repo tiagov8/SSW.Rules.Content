@@ -34,7 +34,7 @@ Bad example – it is a word that other people know
 **Mymistresseyesarenothinglikethesun**
 :::
 ::: bad
-<!-- Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in) -->
+test test test 123
 :::
 
 ::: greybox
