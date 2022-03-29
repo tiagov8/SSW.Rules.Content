@@ -34,7 +34,7 @@ Bad example – it is a word that other people know
 M
 :::
 ::: bad
-E
+Some example
 :::
 
 ::: greybox
