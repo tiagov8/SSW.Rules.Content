@@ -24,21 +24,21 @@ To choose a good passphrase, use a combination of words that are unique and memo
 You might think a favorite sentence from a book might be better, given that it’s longer. While this is true in the context of time taken to brute force a password with procedural character combinations, as attackers adapt to their techniques to longer passwords, it’s important to remember that **a combination of words known to anyone in the world other than you is bad to use as a password**.
 
 ::: greybox
-**Guggenheim**
+**Guggm**
 :::
 ::: bad
 Bad example – it is a word that other people know
 :::
  
 ::: greybox
-**Guggenheim**
+**Gug**
 :::
 ::: bad
 Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
 :::
 
 ::: greybox
-**Guggenheim**
+**Gugge**
 :::
 ::: bad
 Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
