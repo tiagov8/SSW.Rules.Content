@@ -61,3 +61,123 @@ Bad example – It’s the opening to one of Shakespeare’s sonnets so is known
 ::: good
 Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
 :::
+
+
+::: greybox
+**Guggenheim**
+:::
+::: bad
+Bad example – it is a word that other people know
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
+
+
+::: greybox
+**Guggenheim**
+:::
+::: bad
+Bad example – it is a word that other people know
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
+
+
+::: greybox
+**Guggenheim**
+:::
+::: bad
+Bad example – it is a word that other people know
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
+
+
+::: greybox
+**Mymistresseyesarenothinglikethesun**
+:::
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known to other people (and painful to type in)
+:::
+
+
+::: greybox
+**4yearicecreamcat**
+:::
+::: good
+Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+:::
