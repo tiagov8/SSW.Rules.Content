@@ -53,6 +53,11 @@ Good example – LinkedIn is the domain
 
 If you are curious about a URL, and think it might be legitimate, you can check the Whois record to see who owns the domain. A useful tool for this is <https://whois.domaintools.com>
 
+
+::: bad
+![Bad example – ANZAlerter.com is NOT owned by ANZ](bad-whois.png)
+:::
+
 ::: good
 ![Good example – the domain ANZ.com.au is owned by ANZ](good-whois.png)
 :::
