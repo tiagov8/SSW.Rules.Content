@@ -31,10 +31,10 @@ Bad example – it is a word that other people know
 :::
  
 ::: greybox
-**M**
+M
 :::
 ::: bad
-Eg
+E
 :::
 
 ::: greybox
