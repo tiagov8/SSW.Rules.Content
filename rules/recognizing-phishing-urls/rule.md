@@ -43,3 +43,16 @@ http&#58;//linkedinalerter&#46;com
 ::: bad
 Bad example – the address has LinkedIn in it, but is not a legitimate LinkedIn site
 :::
+
+::: greybox
+https&#58;//linkedin&#46;com/someaddress
+:::
+::: good
+Good example – LinkedIn is the domain
+:::
+
+If you are curious about a URL, and think it might be legitimate, you can check the Whois record to see who owns the domain. A useful tool for this is <https://whois.domaintools.com>
+
+::: good
+![Good example – the domain ANZ.com.au is owned by ANZ](good-whois.png)
+:::
