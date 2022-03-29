@@ -1,4 +1,5 @@
 ---
+archivedreason: Duplicate of https://www.ssw.com.au/rules/password-manager
 type: rule
 title: Do you know how to recognize phishing URLs?
 uri: recognizing-phishing-urls
