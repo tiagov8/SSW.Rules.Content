@@ -29,3 +29,10 @@ http&#58;//linkedin&#46;com&#46;sggr&#46;ru/someaddress
 ::: bad
 Bad example – the address has LinkedIn in it, but it is a sub-domain, not the domain
 :::
+
+::: greybox
+http&#58;//linked-in-hq&#46;com/linkedin/myprofile
+:::
+::: bad
+Bad example – the address has LinkedIn in it, but it is in the path, not the FQDN. The FQDN is also suspicious
+:::
