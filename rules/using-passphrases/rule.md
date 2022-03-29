@@ -31,15 +31,8 @@ Bad example – it is a word that other people know
 :::
  
 ::: greybox
-**4yearicecreamcat**
+**Mymistresseyesarenothinglikethesun**
 :::
-::: good
-Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
-:::
-
-::: greybox
-**4yearicecreamcat**
-:::
-::: good
-Good example – it is 16 characters, composed of 5 words, is not a phrase that is known by anyone else, and is easy (for you) to remember
+::: bad
+Bad example – It’s the opening to one of Shakespeare’s sonnets so is known
 :::
