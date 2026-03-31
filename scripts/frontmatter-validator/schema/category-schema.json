@@ -1,10 +1,6 @@
 {
   "type": "object",
   "properties": {
-    "type": {
-      "type": "string",
-      "const": "category"
-    },
     "title": {
       "type": "string"
     },
@@ -69,11 +65,10 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["type", "title", "index", "uri", "guid"],
+  "required": ["title", "index", "uri", "guid"],
   "additionalProperties": true,
   "errorMessage": {
     "properties": {
-      "type": "'type' must be set to 'category'.",
       "title": "'title' cannot be empty.",
       "guid": "'guid' must be a valid GUID.",
       "uri": "'uri' must not be empty.",

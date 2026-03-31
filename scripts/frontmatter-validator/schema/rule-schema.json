@@ -1,10 +1,6 @@
 {
   "type": "object",
   "properties": {
-    "type": {
-      "type": "string",
-      "const": "rule"
-    },
     "title": {
       "type": "string"
     },
@@ -97,11 +93,10 @@
       }
     }
   },
-  "required": ["type", "title", "guid", "uri", "seoDescription", "authors"],
+  "required": ["title", "guid", "uri", "seoDescription", "authors"],
   "additionalProperties": true,
   "errorMessage": {
     "properties": {
-      "type": "'type' must be set to 'rule'.",
       "title": "'title' cannot be empty.",
       "guid": "'guid' must be a valid GUID.",
       "uri": "'uri' must not be empty.",
