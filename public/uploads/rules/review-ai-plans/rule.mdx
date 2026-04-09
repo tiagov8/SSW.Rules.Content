@@ -9,85 +9,86 @@ authors:
     url: 'https://www.ssw.com.au/people/daniel-mackay'
   - title: Gordon Beeming
     url: 'https://www.ssw.com.au/people/gordon-beeming'
+  - title: Michael Qiu
+    url: 'https://www.ssw.com.au/people/michael-qiu'
+  - title: Thomas Sepanosian
+    url: 'https://www.ssw.com.au/people/thomas-sepanosian'
+  - title: Matt Wicks
+    url: 'https://www.ssw.com.au/people/matt-wicks'
 related:
   - rule: public/uploads/rules/ai-assisted-development-workflow/rule.mdx
   - rule: public/uploads/rules/guardrails-for-vibe-coding/rule.mdx
 guid: b68085e1-499d-4849-828e-1541c0defd46
-seoDescription: 'Learn how to review AI-generated coding plans effectively before implementation using the terminal, your editor, or Plannotator for inline PR-style feedback.'
+seoDescription: Learn how to review AI-generated coding plans effectively before implementation - from terminal chat to visual tools like Plannotator and UltraPlan.
 created: 2026-03-16T00:00:00.000Z
 createdBy: Gordon Beeming
 createdByEmail: GordonBeeming@ssw.com.au
+lastUpdated: 2026-04-09T04:57:40.869Z
+lastUpdatedBy: Michael Qiu
+lastUpdatedByEmail: MichaelQiu@ssw.com.au
 isArchived: false
 ---
 
-Before any non-trivial change, always create **and review** a plan with AI. An AI plan is only as good as the human review it receives — an unreviewed plan is a liability waiting to be executed.
+Measure twice, cut once. Before any non-trivial change, always create **and review** a plan with AI. An AI plan is only as good as the human review it receives.
 
-Reviewing the plan is what separates professional AI-assisted development from vibe coding. The Discuss step in the [Plan → Discuss → Implement → Review](/ai-assisted-development-workflow) workflow is where your domain knowledge and judgment provide the most value.
+Reviewing the plan is what separates professional AI-assisted development from vibe coding. The Discuss step in the Plan → Discuss → Implement → Review workflow is where your domain knowledge and judgment provide the most value. See the rule on [AI-assisted development](https://www.ssw.com.au/rules/ai-assisted-development-workflow).
 
 <endIntro />
 
+<youtubeEmbed url="https://www.youtube.com/watch?v=a_AT7cEN_9I" description="Video: Claude Code Plan Mode Plugin - Plannotator (2 min)" />
+
 ## Why plan review matters
 
-Catching problems at the plan stage is dramatically cheaper than catching them after implementation:
+Catching problems at the plan stage is dramatically cheaper than catching them after implementation (both in development costs as well as tokens):
 
-* **Wrong assumptions** — the AI may have misunderstood requirements or made incorrect assumptions about your architecture
-* **Scope creep** — the plan may include unnecessary changes that increase risk
-* **Better alternatives** — you may know of a simpler approach that the AI didn't consider
-* **Multiple iterations** — reviewing and refining the plan several times leads to much better outcomes than approving the first draft
+* **Wrong assumptions** - the AI may have misunderstood requirements or made incorrect assumptions about your architecture
+* **Scope creep** - the plan may include unnecessary changes that increase the scope of the change without you intending it to
+* **Better alternatives** - you may have more domain specific knowledge and know of a more effective approach that the AI didn't consider
+* **Multiple iterations** - reviewing and refining the plan leads to much better outcomes than approving the first draft
 
-A changed plan costs nothing. A re-implemented feature costs a lot.
+Modifying a plan is cheap, re-implementing a feature is expensive.
 
-## Option 1: Terminal (Basic)
+## The traditional approach
 
-The simplest approach is reviewing the plan directly in the chat interface and describing the changes you want.
+The original way to review AI plans is to discuss back and forth with your AI agent directly, such as in the terminal, or inside of your editor if you wanted to have more control by reading the raw `PLAN.md` file yourself.
 
-<boxEmbed
-  style="greybox"
-  body={<>
-    Can you change the database part?
-  </>}
-  figurePrefix="bad"
-  figure="Vague feedback with no context forces the AI to guess which part you mean"
-/>
+### Terminal - Discussing and iterating with your AI Agent
+
+The simplest approach to reviewing the plan is directly inside of the chat interface with your AI Agent, describing the modifications to your plan that you want.
 
 <boxEmbed
   style="greybox"
   body={<>
-    In the 'Data Access Layer' section, where you suggest adding a new repository class — instead, use the existing `IUserRepository` we already have. It already supports the query pattern you need.
+    In the 'Data Access Layer' section, where you suggest adding a new repository class - instead, use the existing `IUserRepository` we already have. It already supports the query pattern you need.
   </>}
-  figurePrefix="good"
+  figurePrefix="none"
   figure="Quoting the exact section and describing precisely what to change gives the AI enough context to act"
 />
 
-<boxEmbed
-  style="info"
-  body={<>
-    **Limitation:** Hard to give targeted feedback on specific sections without copying and pasting chunks of text. Suitable for small plans only.
-  </>}
-  figurePrefix="none"
-  figure=""
-/>
+### Editor - Overview of the actual plan file itself
 
-## Option 2: Editor — VS Code or Cursor
+For more direct control over just reading summaries inside of the terminal, you can open the generated plan file (e.g. `PLAN.md`) inside your editor alongside the chat session with your agent. This gives you a visual overview of the whole plan at once.
 
-Open the generated plan file (e.g. `PLAN.md`) in your editor alongside the terminal. This gives you a visual overview of the whole plan at once. Options available:
+* **Edit manually** - revise the plan directly in the markdown file, then ask the AI to implement from the updated version
+* **Cursor** - built-in plan mode shows the plan inline; you can chat about specific sections directly without leaving the editor
+* **GitHub Copilot Workspace** - offers a plan-then-implement flow with a visual UI in the browser, where you can review and edit proposed changes before the AI implements them
 
-* **Edit manually** — revise the plan directly in the markdown file, then ask the AI to implement from the updated version
-* **VS Code with Claude Code** — select a section, right-click and use "Ask Claude Code" to revise that specific part in context
-* **Cursor** — built-in plan mode shows the plan inline; you can chat about specific sections directly without leaving the editor
+### Limitations
 
-<boxEmbed
-  style="info"
-  body={<>
-    **Limitation:** Still somewhat clunky — you describe what to change rather than clicking directly on a section to annotate it. Works best if you're comfortable editing the markdown file directly.
-  </>}
-  figurePrefix="none"
-  figure=""
-/>
+These methods work, but they have clear drawbacks:
 
-## Option 3: Plannotator ✅ Recommended
+* Hard to give targeted feedback on specific sections without copying and pasting chunks of text
+* No structured way to annotate, comment on, or reject parts of the plan
+* Difficult to track what changed between plan iterations
+* Suitable for small plans only - larger plans become unwieldy
 
-[Plannotator](https://plannotator.ai/) provides a browser-based pull-request-style review UI — think GitHub PR review, but for AI plans. It makes structured, multi-round plan review practical for any plan size.
+## Tools that enhance plan review
+
+A number of tools have popped up that give you a proper visual interface for reviewing and annotating AI plans, similar to how you would review a pull request on GitHub.
+
+### Plannotator (Recommended)
+
+[Plannotator](https://plannotator.ai/) provides a browser-based pull-request-style review UI - think GitHub PR review, but for AI plans. It makes structured, multi-round plan review practical for any plan size.
 
 Key features:
 
@@ -95,12 +96,20 @@ Key features:
 * **Delete** unwanted sections
 * **Replace** or insert content
 * **Global comments** for overall feedback
-* **Multi-round iteration** — deny with annotations → AI refines → re-review → approve
+* **Multi-round iteration** - deny with annotations → AI refines → re-review → approve
+* **Works with any AI agent** - Claude Code, Codex, Copilot CLI, etc.
 * Once approved, the AI builds based on the agreed, refined plan
 
-Plannotator triggers automatically when the plan tool is used. See [plannotator.ai](https://plannotator.ai/) for installation details.
+<boxEmbed
+  body={<>
+    Plannotator triggers automatically when the plan tool is used. See [plannotator's documentation](https://plannotator.ai/docs/getting-started/installation/) for more information
+  </>}
+  figurePrefix="none"
+  figure=""
+  style="info"
+/>
 
-<imageEmbed alt="Plannotator showing a plan diff with the Versions panel open, comparing version 2 against version 1 with red deletions and green additions highlighted" size="large" showBorder={true} figurePrefix="good" figure="Good example - Plannotator's diff view shows exactly what changed between plan versions after an AI revision" src="/uploads/rules/review-ai-plans/plannotator.png" />
+<imageEmbed alt="Plannotator showing a plan diff with the Versions panel open, comparing version 2 against version 1 with red deletions and green additions highlighted" size="large" showBorder={true} figurePrefix="good" figure="Plannotator's diff view shows exactly what changed between plan versions after an AI revision" src="/uploads/rules/review-ai-plans/plannotator.png" />
 
 <boxEmbed
   style="greybox"
@@ -108,22 +117,66 @@ Plannotator triggers automatically when the plan tool is used. See [plannotator.
     **Review workflow with Plannotator:**
     
     1. AI generates `PLAN.md`
-    2. Plannotator opens automatically — the plan renders as an annotatable document
-    3. Add an inline comment on the data access section: *"This approach will cause N+1 queries — use batch loading instead"*
+    2. Plannotator opens automatically - the plan renders as an annotatable document
+    3. Add an inline comment on the data access section: *"This approach will cause N+1 queries - use batch loading instead"*
     4. Submit as **Send Feedback** with overall comment: *"Address the N+1 issue before proceeding"*
     5. AI updates the plan based on annotations
     6. Re-review the revised plan
-    7. **Approve** — AI begins implementation
+    7. **Approve** - AI begins implementation
   </>}
   figurePrefix="good"
-  figure="Good example - Plannotator enables precise, structured feedback with multi-round iteration until the plan is right"
+  figure="Plannotator enables precise, structured feedback with multi-round iteration until the plan is right"
+/>
+
+### UltraPlan
+
+[UltraPlan](https://code.claude.com/docs/en/ultraplan) bridges your local Claude Code CLI with Claude Code on the web. You kick off a planning task from your terminal, and it drafts the plan in the cloud while your terminal stays free. Once ready, you review, comment on, and revise the plan in a rich browser-based UI.
+
+Key features:
+
+* **Inline comments** - highlight any passage in the plan and leave a comment
+* **Emoji reactions** - react to sections to signal approval or concern
+* **Outline sidebar** - navigate between plan sections easily
+* **Terminal stays free** - the plan drafts remotely so you can keep working
+* **Flexible execution** - approve to run on the web (auto-PR) or send the plan back to your terminal
+* Launch via `/ultraplan` command, the keyword "ultraplan" in a prompt, or by promoting a local plan
+
+<boxEmbed
+  style="info"
+  body={<>
+    **Note:** UltraPlan is currently in research preview (requires Claude Code v2.1.91+ and a Claude Code on the web account with a GitHub repo).
+  </>}
+  figurePrefix="none"
+  figure=""
+/>
+
+### Claude Code VSCode Extension
+
+The [Claude Code VSCode extension](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code) has built-in plan review features. When Claude generates a plan in VS Code, it automatically opens as a full markdown document in an editor tab - not just a chat message.
+
+Key features:
+
+* **Full document view** - the plan opens in a dedicated editor tab for easy reading
+* **Inline comments** - add comments directly on specific sections of the plan to give Claude targeted feedback
+* **Approval workflow** - once reviewed, choose to execute in auto mode, review each edit manually, or keep planning with feedback
+
+<boxEmbed
+  style="info"
+  body={<>
+    **Limitation:** Inline comments are freeform text feedback to Claude - there is no tracked resolution workflow like a GitHub PR review.
+  </>}
+  figurePrefix="none"
+  figure=""
 />
 
 ## Comparison
 
-|                           | Terminal | Editor (VS Code/Cursor) | Plannotator |
-| ------------------------- | -------- | ----------------------- | ----------- |
-| Targeted line feedback    | ❌        | Partial                 | ✅           |
-| Multi-round iteration     | ❌        | ❌                       | ✅           |
-| No copy-pasting needed    | ❌        | ✅                       | ✅           |
-| Structured feedback to AI | ❌        | Partial                 | ✅           |
+|                           | Terminal | Editor  | Plannotator | UltraPlan        | Claude Code VSCode |
+| ------------------------- | -------- | ------- | ----------- | ---------------- | ------------------ |
+| Targeted line feedback    | ❌        | Partial | ✅           | ✅                | ✅                  |
+| Multi-round iteration     | ❌        | ❌       | ✅           | ✅                | ✅                  |
+| No copy-pasting needed    | ❌        | ✅       | ✅           | ✅                | ✅                  |
+| Structured feedback to AI | ❌        | Partial | ✅           | ✅                | ✅                  |
+| Works with any AI agent   | ✅        | ✅       | ✅           | ❌                | ❌                  |
+| Terminal stays free       | ❌        | ❌       | ❌           | ✅                | N/A                |
+| Cost                      | Free     | Free    | Free        | Research preview | Built-in           |
