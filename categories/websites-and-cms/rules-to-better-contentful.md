@@ -8,4 +8,4 @@ index:
 
 ---
 
-[Contentful](https://www.contentful.com) is a headless CMS designed for teams that need flexible content management across multiple channels. Check [SSW's CMS consulting page](https://www.ssw.com.au/consulting).
+[Contentful](https://www.contentful.com) is a headless CMS designed for teams that need flexible content management across multiple channels. Check [SSW's CMS consulting page](https://www.ssw.com.au/consulting?tag=Content-Management%20Systems%20(CMS)).

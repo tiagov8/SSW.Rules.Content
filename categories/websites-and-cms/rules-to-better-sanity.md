@@ -8,4 +8,4 @@ index:
 
 ---
 
-[Sanity](https://www.sanity.io) is a headless CMS built for teams that want highly customizable content workflows and real-time collaboration. Check [SSW's CMS consulting page](https://www.ssw.com.au/consulting).
+[Sanity](https://www.sanity.io) is a headless CMS built for teams that want highly customizable content workflows and real-time collaboration. Check [SSW's CMS consulting page](https://www.ssw.com.au/consulting?tag=Content-Management%20Systems%20(CMS)).
