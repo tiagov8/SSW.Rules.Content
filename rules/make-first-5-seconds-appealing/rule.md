@@ -12,7 +12,7 @@ categories:
   - category: categories/marketing-and-video/rules-to-better-youtube.mdx
 ---
 
-In today's fast-paced world, the first few seconds of your video determine whether someone will keep watching. If you don't hook the viewer instantly, they'll click off.
+Most viewers decide within the first 5 seconds whether to keep watching — or scroll past. Nail the opening, and they stay. Miss it, and they're gone.
 
 <!--endintro-->
 
@@ -38,4 +38,6 @@ Good example - Leads with the value, sparks curiosity, and sets up what's coming
 
 > "If the first 5 seconds don't hook the viewer, nothing else matters." — MrBeast
 
-**Tip:** Watch your video's analytics for early drop-off points. If viewers leave in the first 5 seconds, rework your opening.
+::: info
+Watch your video's analytics for early drop-off points. If viewers leave in the first 5 seconds, rework your opening.
+:::
