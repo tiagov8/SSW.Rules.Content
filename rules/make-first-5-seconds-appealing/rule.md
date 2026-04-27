@@ -12,32 +12,41 @@ categories:
   - category: categories/marketing-and-video/rules-to-better-youtube.mdx
 ---
 
-Most viewers decide within the first 5 seconds whether to keep watching — or scroll past. Nail the opening, and they stay. Miss it, and they're gone.
+Most viewers decide in the first 5 seconds whether to keep watching or scroll past. Nail the opening and they stay. Miss it and they are gone.
 
-<!--endintro-->
+<endIntro />
 
 A powerful intro should:
 
-* **Match the title and thumbnail** – Immediately deliver on the promise of your content. If viewers feel misled, they leave
-* **Grab attention** – Remove all dull moments and get straight to the point. No long intros, no slow builds
-* **Build curiosity** – Tease what's coming next to give viewers a reason to stay
+* **Match the title and thumbnail:** Deliver on the promise of your content. If viewers feel misled, they leave
+* **Grab attention:** Remove all dull moments and get straight to the point. No long intros, no slow builds
+* **Build curiosity:** Tease what is coming next to give viewers a reason to stay
 
-::: greybox
-"Hey guys, welcome back to my channel! Today I'm going to be talking about..."
-:::
-::: bad
-Bad example - Generic greetings waste precious seconds and lose viewers before the content even starts
-:::
+<boxEmbed
+  style="greybox"
+  body={<>
+    "Hey guys, welcome back to my channel! Today I'm going to be talking about..."
+  </>}
+  figurePrefix="bad"
+  figure="Generic greetings waste precious seconds and lose viewers before the content even starts"
+/>
 
-::: greybox
-"I just found the fastest way to edit videos — and it cuts production time in half. Here's how..."
-:::
-::: good
-Good example - Leads with the value, sparks curiosity, and sets up what's coming
-:::
+<boxEmbed
+  style="greybox"
+  body={<>
+    "I just found the fastest way to edit videos and it cuts production time in half. Here's how..."
+  </>}
+  figurePrefix="good"
+  figure="Leads with the value, sparks curiosity, and sets up what is coming"
+/>
 
 > "If the first 5 seconds don't hook the viewer, nothing else matters." — MrBeast
 
-::: info
-Watch your video's analytics for early drop-off points. If viewers leave in the first 5 seconds, rework your opening.
-:::
+<boxEmbed
+  style="info"
+  body={<>
+    Watch your video's analytics for early drop-off points. If viewers leave in the first 5 seconds, rework your opening.
+  </>}
+  figurePrefix="none"
+  figure=""
+/>
